@@ -1,29 +1,43 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
+    <header>
+        <h1 role="heading">My Portfolio</h1>
+        <nav role="navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-	<h1>
-		this is heading
-	</h1>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="profile.jpg" alt="Profile Picture" role="img">
+            <p>A brief description about myself goes here.</p>
+        </section>
 
-	<ul class="destination-list">
-            <li><strong>Yellowstone National Park, USA:</strong> Experience geysers, hot springs, and diverse wildlife.</li>
-            <li><strong>Amazon Rainforest, Brazil:</strong> Explore the world's largest tropical rainforest.</li>
-            <li><strong>Swiss Alps, Switzerland:</strong> Discover breathtaking mountain views and pristine lakes.</li>
-        </ul>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul role="list">
+                <li role="listitem">Project 1</li>
+                <li role="listitem">Project 2</li>
+                <li role="listitem">Project 3</li>
+            </ul>
+        </section>
 
-	<img src = "https://images.unsplash.com/photo-1709148910322-5a58adaf0e9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8"
- alt = "error loading"	>
-    <script type="text/javascript" src="./script.js">
-</script>
-
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Contact information goes here.</p>
+        </section>
+    </main>
 </body>
-
 </html>
